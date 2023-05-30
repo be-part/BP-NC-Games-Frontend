@@ -23,7 +23,7 @@ function ReviewsList (){
     
     {reviewsList.map(({review_id, title, owner, review_img_url, created_at, votes, designer, category, comment_count}) => {
         return (<ReviewCard
-        key={review_id}
+        review_id={review_id}
         gameTitle={title}
         username={owner}
         image={review_img_url}

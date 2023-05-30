@@ -9,3 +9,10 @@ export function GetReviews() {
         return res.data
     }).catch((err) => { console.log(err, "<- GetReviews") })
 }
+
+export function FetchSingleReview(review_id) {
+    return ncgamesAPI.get(`/reviews/${review_id}`).then((res) => {
+        return res.data
+    }).catch((err) => { console.log(err, "<- FetchSingleReview") })
+
+}

@@ -1,7 +1,13 @@
+/* Bold */ 
+.bold{
+  font-weight: bold;
+}
+
 /* Header CSS */
 .Header {
   width:100%; 
-  background-color:rgb(212, 163, 115);
+  background-color:rgb(154, 3, 30);
+  color: #ffffff;
 }
 
 .HeaderContent {
@@ -16,7 +22,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(233, 237, 201);
+  background-color: rgb(251, 139, 36);
 }
 
 .NavOption {
@@ -29,7 +35,7 @@
 }
 
 .NavOption:hover {
-  background-color: rgb(204, 213, 174);
+  background-color: rgb(227, 100, 20);
   color: rgb(31, 32, 31);
 }
 
@@ -50,7 +56,7 @@
 
 /* ReviewsList CSS */
 .ReviewsList {
-  border: 3px solid rgb(212, 163, 115);
+  border: 3px solid rgb(0, 29, 61);
   margin: 10px;
   padding: 10px;
   list-style: none;
@@ -58,37 +64,59 @@
   text-align: left;
   flex-wrap: wrap;
   flex-direction: row;
- 
 }
 
 .ReviewsListTitle {
   margin: 10px;
   padding: 10px;
   text-align: center;
+  color:rgb(0, 29, 61)
 }
 
 /* ReviewCard CSS */
 .ReviewListItem {
-  border: 3px solid rgb(204, 213, 174);
-  background-color: rgb(233, 237, 201);
+  background-color: rgb(245, 242, 215);
   margin: 5px;
   padding: 10px;
 }
 
 .RCTitle {
-  background: rgb(173, 193, 120);
-  padding: 1rem;
-  margin-left: auto;
-  margin-right: auto;
+  color: rgb(0, 29, 61);
   text-align:center;
-  font-size: 100%;
+  font-size: 20px;
 }
 
 .RCImage {
+  border-radius: 8px;
+  width: 20%;
+  height: 30%;
+}
+
+/* Single Review CSS */
+.SingleReviewContainer {
+  border: 3px solid rgb(245, 242, 215);
+  
+  margin: 5px;
+  padding: 10px;
+}
+
+.SingleReviewTitle {
+  grid-area: header;
+  text-align: center;
+  color: rgb(0, 29, 61);
+}
+
+.SingleReviewInfo {
+  background-color: rgb(245, 242, 215);
+  margin: 10px;
+  padding: 10px;
+}
+
+#SRImage {
   margin: 1rem;
   border-radius: 8px;
-  width: 150px;
-  height: 120px;
+  width: 40%;
+  height: 40%;
 }
 
 
