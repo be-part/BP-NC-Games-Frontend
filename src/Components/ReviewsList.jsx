@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react"
-import { GetReviews } from "./Api";
+import { GetReviews } from "../Api";
 import ReviewCard from "./ReviewCard";
 
 function ReviewsList (){
