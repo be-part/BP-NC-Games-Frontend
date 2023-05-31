@@ -10,4 +10,4 @@ function CommentCard ({commentID, votes, createdAt, author, body}) {
     </li>
     );
     }
-    export default CommentCard
+export default CommentCard
