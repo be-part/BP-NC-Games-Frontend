@@ -2,6 +2,8 @@ import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { FetchSingleReview } from '../Api';
 import SingleReviewCard from './SingleReviewCard';
+import CommentsList from './CommentsList';
+
 
 function SingleReview() {
   const [singleReview, setSingleReview] = useState({});
@@ -18,12 +20,18 @@ function SingleReview() {
       
       <main>
         {singleReview.review ? (
-            <article className="SingleReviewContainer">
-            <h2 className="SingleReviewTitle">{singleReview.review.title}</h2>
+          <section>
+            <article id="SingleReviewContainer">
+            <h2 id="SingleReviewTitle">{singleReview.review.title}</h2>
             <SingleReviewCard singleReview={singleReview}/>
             </article>
+            <div id="CommentsContainer">
+            <h2 id="CommentsListTitle">Comments</h2>
+            <CommentsList review_id={review_id} />
+            </div>
+            </section>
         ) : (
-          <p>Loading...</p>
+          <p className="Loading" >Loading...</p>
         )}
       </main>
     </>
