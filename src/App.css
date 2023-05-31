@@ -74,11 +74,13 @@
 .ReviewsList {
   border: 3px solid rgb(0, 29, 61);
   padding: 15px;
+  padding-inline: 0;
   list-style: none;
   width: 100%;
   content: "";
   clear: both;
   display: table;
+  margin-block: 0;
 }
 
 .ReviewsListTitle {
@@ -92,6 +94,7 @@
 .ReviewListItem {
   background-color: rgb(245, 242, 215);
   padding: 10px;
+  margin-bottom: 8px;
   width: 100%;
   content: "";
   clear: both;
@@ -113,7 +116,6 @@
 /* Single Review CSS */
 #SingleReviewContainer {
   border: 3px solid rgb(245, 242, 215);
-  padding: 15px;
   width: 100%;
   content: "";
   clear: both;
