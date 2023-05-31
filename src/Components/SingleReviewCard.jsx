@@ -2,7 +2,7 @@ function SingleReviewCard ({singleReview}) {
     
     return (<>
     
-    <article className="SingleReviewInfo">
+    <article id="SingleReviewInfo">
            <span className="bold">Game Designer:</span> {singleReview.review.designer}
            <br/>
            <span className="bold">Category:</span> {singleReview.review.category}
@@ -12,7 +12,7 @@ function SingleReviewCard ({singleReview}) {
            <br/>
            <img id="SRImage" src={singleReview.review.review_img_url} alt={singleReview.review.title}/>
            <br/>
-           <span className="bold">Submitted by:</span>{singleReview.review.owner}
+           <span className="bold">Submitted by:</span> {singleReview.review.owner}
            <br/>
            <span className="bold">Submitted on:</span> {singleReview.review.created_at}
            <br/>

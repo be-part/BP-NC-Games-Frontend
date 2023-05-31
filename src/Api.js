@@ -16,3 +16,9 @@ export function FetchSingleReview(review_id) {
     }).catch((err) => { console.log(err, "<- FetchSingleReview") })
 
 }
+
+export function GetComments(review_id) {
+    return ncgamesAPI.get(`reviews/${review_id}/comments`).then((res) => {
+        return res.data
+    }).catch((err) => { console.log(err, "<- GetComments") })
+}
