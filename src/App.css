@@ -53,22 +53,32 @@
 
 /* Home CSS */
 .Home {
-  border: 3px solid #646cff;
-  margin: 10px;
-  padding: 5px;
+  border: 3px solid rgb(0, 29, 61);
+  padding: 15px;
+  width: 100%;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .HomeContent {
-width: 100%;
-float:left
+  padding: 15px;
+  width: 100%;
+  content: "";
+  clear: both;
+  display: table;
+  float:left
 }
 
 /* ReviewsList CSS */
 .ReviewsList {
   border: 3px solid rgb(0, 29, 61);
-  margin: 10px;
   padding: 15px;
   list-style: none;
+  width: 100%;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .ReviewsListTitle {
@@ -81,7 +91,6 @@ float:left
 /* ReviewCard CSS */
 .ReviewListItem {
   background-color: rgb(245, 242, 215);
-  margin: 5px;
   padding: 10px;
   width: 100%;
   content: "";
