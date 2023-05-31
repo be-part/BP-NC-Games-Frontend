@@ -9,9 +9,11 @@ function SingleReview() {
   const [singleReview, setSingleReview] = useState({});
   const { review_id } = useParams();
 
+  console.log(singleReview)
+
   useEffect(() => {
     FetchSingleReview(review_id).then((data) => {
-      setSingleReview(data);
+      setSingleReview(data.review);
     });
   }, [review_id]);
 
@@ -19,11 +21,11 @@ function SingleReview() {
     <>
       
       <main>
-        {singleReview.review ? (
+        {singleReview ? (
           <section>
             <article id="SingleReviewContainer">
-            <h2 id="SingleReviewTitle">{singleReview.review.title}</h2>
-            <SingleReviewCard singleReview={singleReview}/>
+            <h2 id="SingleReviewTitle">{singleReview.title}</h2>
+            <SingleReviewCard singleReview={singleReview} setSingleReview={setSingleReview}/>
             </article>
             <div id="CommentsContainer">
             <h2 id="CommentsListTitle">Comments</h2>
