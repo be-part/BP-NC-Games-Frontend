@@ -1,14 +1,17 @@
 import {useState} from "react"
 import { PostComment } from "../Api";
+import { useContext } from "react"
+import { userContext } from "../Contexts/userContext"
 
 function AddComment({review_id, setCommentsList}){
-    
 
-    const [userName, setUserName] = useState("");
+    const [user, setUser] = useContext(userContext)
+
+    const [userName, setUserName] = useState(user);
     const [body, setBody] = useState("");
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const handleSubmit = (event) => {
+        event.preventDefault();
        
         const newComment = {username: userName, body: body}
 
@@ -36,7 +39,8 @@ function AddComment({review_id, setCommentsList}){
             type="text"
             value={userName}
 	        required
-            onChange={(e) => setUserName(e.target.value)}
+            readOnly
+            //onChange={(event) => setUserName(event.target.value)}
         />
         <div id="TextAreaLabelContainer">
         <label htmlFor="body">Comment: <span className="space2" ></span></label>
@@ -46,7 +50,7 @@ function AddComment({review_id, setCommentsList}){
 	        required
             cols="40"
             rows="4"
-            onChange={(e) => setBody(e.target.value)}> </textarea>
+            onChange={(event) => setBody(event.target.value)}> </textarea>
         </div>
         <button id="submit-btn">Submit Comment 💬</button>
         </form>
