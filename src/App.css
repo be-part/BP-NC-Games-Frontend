@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+
 /* Header CSS */
 .Header {
   width:100%; 
@@ -13,8 +14,27 @@
 
 .HeaderContent {
   margin: 0 auto; 
-  width: 95%;
+  width: 96%;
   text-align: left;
+}
+
+/* Header User */
+#Header-User {
+  width:100%; 
+  background-color:rgb(93, 136, 216);
+  color: #ffffff;
+  font-weight: 500;
+}
+
+#Header-User-Content {
+  margin: 0 auto; 
+  width: 96%;
+  text-align: left;
+}
+
+#Logged-In-As{
+  font-family: 'Cinzel', serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
 }
 
 /* Navigation Bar CSS */
@@ -85,13 +105,13 @@
 }
 
 .ReviewsListTitle {
-  margin: 10px;
   padding: 10px;
   text-align: center;
   color:rgb(0, 29, 61);
   font-family: 'Cinzel', serif, Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   font-size:xx-large;
+  margin: 0px;
 }
 
 /* ReviewCard CSS */
@@ -120,6 +140,7 @@
 /* Single Review CSS */
 #SingleReviewContainer {
   border: 3px solid rgb(245, 242, 215);
+  padding: 15px;
   width: 100%;
   content: "";
   clear: both;
@@ -127,17 +148,18 @@
 }
 
 #SingleReviewTitle {
-  grid-area: header;
   text-align: center;
   color: rgb(0, 29, 61);
   font-family: 'Cinzel', serif, Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   font-size: xx-large;
+  margin-block: 0px;
+  padding: 10px;
 }
 
 #SingleReviewInfo {
   background-color: rgb(245, 242, 215);
-  margin: 10px;
+  margin: 0;
   padding: 10px;
 }
 
@@ -166,7 +188,8 @@ padding-inline-start: 0;
 
 #CommentListItem {
 background-color: rgb(235, 216, 204);
-margin: 5px;
+margin: 0px;
+padding: 10px;
 }
 
 #CCUser {
@@ -182,6 +205,55 @@ color: rgb(124, 83, 58);
 #CCVotes {
   font-size: small;
   color: rgb(124, 83, 58);
+}
+
+/* Post a comment CSS */
+
+#PostCommentContainer {
+  margin-bottom: 15px;
+}
+
+#PostCommentForm {
+background-color: rgb(239, 241, 243);
+padding: 10px;
+}
+
+#PostCommentTitle {
+  font-size: large;
+  font-weight: 100;
+  margin: 0;
+  border: 0;
+  margin-bottom: 10px;
+}
+
+#TextAreaLabelContainer {
+  display: flex;
+  align-items:flex-start;
+  margin-bottom: 10px;
+}
+
+/* Select User */
+#SU-Title {
+  text-align: center;
+  color: rgb(0, 29, 61);
+  font-family: 'Cinzel', serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: xx-large;
+  margin-block: 0px;
+  padding: 10px;
+}
+
+#SU-Container {
+  border: 3px solid rgb(235, 216, 204);
+  padding: 15px;
+  width: 100%;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#CurrentUser {
+color:rgb(154, 3, 30);
 }
 
 /* Buttons */
@@ -223,6 +295,30 @@ button:focus-visible {
   color:aliceblue;
 }
 
+#submit-btn {
+  background-color: rgb(3, 70, 143);
+  padding: 6px;
+  margin-left: 10px;
+}
+#submit-btn:hover {
+  border-color: #ffffff;
+  filter: drop-shadow(0 0 0.5em #252727a8);
+  background-color: rgb(0, 29, 61);
+  color:aliceblue;
+}
+
+#SU-btn {
+  background-color:  rgba(251, 140, 36, 0.89);
+  padding: 6px;
+  margin-left: 10px;
+}
+#SU-btn:hover {
+  border-color: #ffffff;
+  filter: drop-shadow(0 0 0.5em #252727a8);
+  background-color: rgb(227, 100, 20);
+  color:aliceblue
+}
+
 /* Miscellaneous */
 
 /* Loading CSS */
@@ -238,6 +334,10 @@ button:focus-visible {
 /* Space */
 .space {
   margin: 10px;
+}
+
+.space2 {
+  margin: 4px;
 }
 
 /* Links */
