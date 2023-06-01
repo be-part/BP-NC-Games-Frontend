@@ -2,11 +2,6 @@
   box-sizing: border-box;
 }
 
-/* Bold */ 
-.bold{
-  font-weight: bold;
-}
-
 /* Header CSS */
 .Header {
   width:100%; 
@@ -177,11 +172,58 @@ color: rgb(124, 83, 58);
   color: rgb(124, 83, 58);
 }
 
+/* Buttons */
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 5px;
+  margin: 3px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#upvote-btn {
+  background-color:  rgba(251, 140, 36, 0.89);
+}
+#upvote-btn:hover {
+  border-color: #ffffff;
+  filter: drop-shadow(0 0 0.5em #252727a8);
+  background-color: rgb(227, 100, 20);
+  color:aliceblue
+}
+
+#downvote-btn {
+  background-color: rgba(154, 3, 31, 0.829);
+}
+#downvote-btn:hover {
+  border-color: #ffffff;
+  filter: drop-shadow(0 0 0.5em #252727a8);
+  background-color: rgb(154, 3, 30);
+  color:aliceblue;
+}
+
+/* Miscellaneous */
+
 /* Loading CSS */
 .Loading {
   text-align: center;
 }
 
-/* .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-} */
+/* Bold */ 
+.bold{
+  font-weight: bold;
+}
+
+/* Space */
+.space {
+  margin: 10px;
+}

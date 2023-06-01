@@ -1,7 +1,7 @@
 function CommentCard ({commentID, votes, createdAt, author, body}) {
 
     return (
-    <li id="CommentListItem"key={commentID}>
+    <li id="CommentListItem" key={commentID}>
     {body}
     <br/>
     <p id="CCUser"><span className="bold">Submitted by:</span> {author}</p>

@@ -15,21 +15,30 @@ useEffect(() => {
     
     if (isLoading) return <p className="Loading"> Loading... </p>
     
-    return (<>
-    
-    
-    <ul id ="CommentList">
-            {commentsList.map(({comment_id, votes, created_at, author, body}) => {
-            return (<CommentCard
+    const commentsPosted = commentsList.length >0
+
+    return (
+    <>
+    <main>
+        {commentsPosted ? (
+            <section>
+                <ul id ="CommentList">
+                {commentsList.map(({comment_id, votes, created_at, author, body}) => {
+                return (<CommentCard
                 commentID={comment_id}
                 votes={votes}
                 createdAt={created_at}
                 author={author}
                 body={body}
-            />
-            );
-        })}
-    </ul>
+                />
+                );
+                })}
+                </ul>
+            </section>
+        ) : (
+          <p> No comments yet! </p>
+        )}
+    </main>
     </>)
 }
 

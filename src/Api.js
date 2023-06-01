@@ -22,3 +22,10 @@ export function GetComments(review_id) {
         return res.data
     }).catch((err) => { console.log(err, "<- GetComments") })
 }
+
+export function ChangeVotes(review_id, value) {
+    return ncgamesAPI.patch(`/reviews/${review_id}`, {inc_votes: value})
+    .then((res) => {
+        return res.data
+    }).catch((err) => {console.log(err, "<- ChangeVotes") })
+}
