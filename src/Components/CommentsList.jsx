@@ -43,21 +43,3 @@ useEffect(() => {
 }
 
 export default CommentsList
-
-
-
-
-    //   <section>
-    //   <ul id ="CommentList">
-    //           {commentsList.map(({comment_id, votes, created_at, author, body}) => {
-    //           return (<CommentCard
-    //               commentID={comment_id}
-    //               votes={votes}
-    //               createdAt={created_at}
-    //               author={author}
-    //               body={body}
-    //           />
-    //           );
-    //       })}
-    //   </ul>
-    //   </section>

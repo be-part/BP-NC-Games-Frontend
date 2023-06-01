@@ -23,16 +23,9 @@ export function GetComments(review_id) {
     }).catch((err) => { console.log(err, "<- GetComments") })
 }
 
-export function GetVotes(review_id) {
-    return ncgamesAPI.patch(`/reviews/${review_id}`, {inc_votes: 1})
+export function ChangeVotes(review_id, value) {
+    return ncgamesAPI.patch(`/reviews/${review_id}`, {inc_votes: value})
     .then((res) => {
-    return res.data
-    }).catch((err) => {console.log(err, "<- GetVotes") })
-}
-
-export function RemoveVotes(review_id) {
-    return ncgamesAPI.patch(`/reviews/${review_id}`, {inc_votes: -1})
-    .then((res) => {
-    return res.data
-    }).catch((err) => {console.log(err, "<- GetVotes") })
+        return res.data
+    }).catch((err) => {console.log(err, "<- ChangeVotes") })
 }

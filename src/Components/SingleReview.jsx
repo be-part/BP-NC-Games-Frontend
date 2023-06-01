@@ -9,8 +9,6 @@ function SingleReview() {
   const [singleReview, setSingleReview] = useState({});
   const { review_id } = useParams();
 
-  console.log(singleReview)
-
   useEffect(() => {
     FetchSingleReview(review_id).then((data) => {
       setSingleReview(data.review);
