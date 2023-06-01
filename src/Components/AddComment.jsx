@@ -18,6 +18,9 @@ function AddComment({review_id, setCommentsList}){
             });
 
         });
+
+        setUserName("")
+        setBody("")
     };
     
 
@@ -41,7 +44,7 @@ function AddComment({review_id, setCommentsList}){
             id="body" 
             value={body}
 	        required
-            cols="50"
+            cols="40"
             rows="4"
             onChange={(e) => setBody(e.target.value)}> </textarea>
         </div>

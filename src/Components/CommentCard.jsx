@@ -1,5 +1,4 @@
 function CommentCard ({comment_id, votes, createdAt, author, body}) {
-console.log(comment_id)
     return (
     <li key={comment_id} id="CommentListItem" >
     {body}

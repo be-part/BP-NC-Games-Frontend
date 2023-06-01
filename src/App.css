@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+
 /* Header CSS */
 .Header {
   width:100%; 
@@ -85,13 +86,13 @@
 }
 
 .ReviewsListTitle {
-  margin: 10px;
   padding: 10px;
   text-align: center;
   color:rgb(0, 29, 61);
   font-family: 'Cinzel', serif, Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   font-size:xx-large;
+  margin: 0px;
 }
 
 /* ReviewCard CSS */
@@ -120,6 +121,7 @@
 /* Single Review CSS */
 #SingleReviewContainer {
   border: 3px solid rgb(245, 242, 215);
+  padding: 15px;
   width: 100%;
   content: "";
   clear: both;
@@ -127,17 +129,18 @@
 }
 
 #SingleReviewTitle {
-  grid-area: header;
   text-align: center;
   color: rgb(0, 29, 61);
   font-family: 'Cinzel', serif, Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   font-size: xx-large;
+  margin-block: 0px;
+  padding: 10px;
 }
 
 #SingleReviewInfo {
   background-color: rgb(245, 242, 215);
-  margin: 10px;
+  margin: 0;
   padding: 10px;
 }
 
@@ -166,7 +169,8 @@ padding-inline-start: 0;
 
 #CommentListItem {
 background-color: rgb(235, 216, 204);
-margin: 5px;
+margin: 0px;
+padding: 10px;
 }
 
 #CCUser {
