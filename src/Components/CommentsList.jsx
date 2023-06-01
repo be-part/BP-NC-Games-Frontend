@@ -2,8 +2,8 @@ import {useState, useEffect} from "react"
 import { GetComments } from "../Api";
 import CommentCard from "./CommentCard";
 
-function CommentsList ({review_id}){
-const [commentsList, setCommentsList] = useState([]);
+function CommentsList ({review_id, commentsList, setCommentsList}){
+
 const [isLoading, setIsLoading] = useState(true);
 
 useEffect(() => {
@@ -22,10 +22,10 @@ useEffect(() => {
     <main>
         {commentsPosted ? (
             <section>
-                <ul id ="CommentList">
+                <ul id="CommentList">
                 {commentsList.map(({comment_id, votes, created_at, author, body}) => {
                 return (<CommentCard
-                commentID={comment_id}
+                comment_id={comment_id}
                 votes={votes}
                 createdAt={created_at}
                 author={author}

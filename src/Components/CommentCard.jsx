@@ -1,7 +1,7 @@
-function CommentCard ({commentID, votes, createdAt, author, body}) {
-
+function CommentCard ({comment_id, votes, createdAt, author, body}) {
+console.log(comment_id)
     return (
-    <li id="CommentListItem" key={commentID}>
+    <li key={comment_id} id="CommentListItem" >
     {body}
     <br/>
     <p id="CCUser"><span className="bold">Submitted by:</span> {author}</p>

@@ -184,6 +184,31 @@ color: rgb(124, 83, 58);
   color: rgb(124, 83, 58);
 }
 
+/* Post a comment CSS */
+
+#PostCommentContainer {
+  margin-bottom: 15px;
+}
+
+#PostCommentForm {
+background-color: rgb(239, 241, 243);
+padding: 10px;
+}
+
+#PostCommentTitle {
+  font-size: large;
+  font-weight: 100;
+  margin: 0;
+  border: 0;
+  margin-bottom: 10px;
+}
+
+#TextAreaLabelContainer {
+  display: flex;
+  align-items:flex-start;
+  margin-bottom: 10px;
+}
+
 /* Buttons */
 
 button {
@@ -223,6 +248,18 @@ button:focus-visible {
   color:aliceblue;
 }
 
+#submit-btn {
+  background-color: rgb(3, 70, 143);
+  padding: 6px;
+  margin-left: 10px;
+}
+#submit-btn:hover {
+  border-color: #ffffff;
+  filter: drop-shadow(0 0 0.5em #252727a8);
+  background-color: rgb(0, 29, 61);
+  color:aliceblue;
+}
+
 /* Miscellaneous */
 
 /* Loading CSS */
@@ -238,6 +275,10 @@ button:focus-visible {
 /* Space */
 .space {
   margin: 10px;
+}
+
+.space2 {
+  margin: 4px;
 }
 
 /* Links */

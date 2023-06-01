@@ -3,10 +3,12 @@ import { useState, useEffect } from 'react';
 import { FetchSingleReview } from '../Api';
 import SingleReviewCard from './SingleReviewCard';
 import CommentsList from './CommentsList';
+import AddComment from './AddComment';
 
 
 function SingleReview() {
   const [singleReview, setSingleReview] = useState({});
+  const [commentsList, setCommentsList] = useState([]);
   const { review_id } = useParams();
 
   useEffect(() => {
@@ -27,7 +29,8 @@ function SingleReview() {
             </article>
             <div id="CommentsContainer">
             <h2 id="CommentsListTitle">Comments</h2>
-            <CommentsList review_id={review_id} />
+            <AddComment review_id={review_id} setCommentsList={setCommentsList}/>
+            <CommentsList review_id={review_id} commentsList={commentsList} setCommentsList={setCommentsList} />
             </div>
             </section>
         ) : (

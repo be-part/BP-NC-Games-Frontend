@@ -29,3 +29,10 @@ export function ChangeVotes(review_id, value) {
         return res.data
     }).catch((err) => {console.log(err, "<- ChangeVotes") })
 }
+
+export function PostComment(review_id, newComment) {
+    return ncgamesAPI.post(`/reviews/${review_id}/comments`, newComment)
+    .then((res) => {
+    return res.data.comment
+    }).catch((err) => {console.log(err, "<- PostComment") })
+}
