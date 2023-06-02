@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { FetchSingleReview } from '../Api';
+import { fetchSingleReview } from '../Api';
 import SingleReviewCard from './SingleReviewCard';
 import CommentsList from './CommentsList';
 import AddComment from './AddComment';
@@ -12,7 +12,7 @@ function SingleReview() {
   const { review_id } = useParams();
 
   useEffect(() => {
-    FetchSingleReview(review_id).then((data) => {
+    fetchSingleReview(review_id).then((data) => {
       setSingleReview(data.review);
     });
   }, [review_id]);

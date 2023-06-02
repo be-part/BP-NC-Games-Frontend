@@ -4,35 +4,41 @@ const ncgamesAPI = axios.create({
     baseURL: 'https://nc-games-bp.onrender.com/api/'
 })
 
-export function GetReviews() {
-    return ncgamesAPI.get(`/reviews`).then((res) => {
+export function getReviews(category) {
+    return ncgamesAPI.get(`/reviews`, {params: {category: category }}).then((res) => {
         return res.data
-    }).catch((err) => { console.log(err, "<- GetReviews") })
+    }).catch((err) => { return err })
 }
 
-export function FetchSingleReview(review_id) {
+export function fetchSingleReview(review_id) {
     return ncgamesAPI.get(`/reviews/${review_id}`).then((res) => {
         return res.data
-    }).catch((err) => { console.log(err, "<- FetchSingleReview") })
+    }).catch((err) => {return err })
 
 }
 
-export function GetComments(review_id) {
+export function getComments(review_id) {
     return ncgamesAPI.get(`reviews/${review_id}/comments`).then((res) => {
         return res.data
-    }).catch((err) => { console.log(err, "<- GetComments") })
+    }).catch((err) => { return err })
 }
 
-export function ChangeVotes(review_id, value) {
+export function changeVotes(review_id, value) {
     return ncgamesAPI.patch(`/reviews/${review_id}`, {inc_votes: value})
     .then((res) => {
         return res.data
-    }).catch((err) => {console.log(err, "<- ChangeVotes") })
+    }).catch((err) => {return err })
 }
 
-export function PostComment(review_id, newComment) {
+export function postComment(review_id, newComment) {
     return ncgamesAPI.post(`/reviews/${review_id}/comments`, newComment)
     .then((res) => {
     return res.data.comment
-    }).catch((err) => {console.log(err, "<- PostComment") })
+    }).catch((err) => {return err })
+}
+
+export function getCategories() {
+    return ncgamesAPI.get(`categories`).then((res) => {
+        return res.data
+    }).catch((err) => { return err })
 }

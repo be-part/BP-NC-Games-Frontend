@@ -1,5 +1,5 @@
 import {useState} from "react"
-import { PostComment } from "../Api";
+import { postComment } from "../Api";
 import { useContext } from "react"
 import { userContext } from "../Contexts/userContext"
 
@@ -15,7 +15,7 @@ function AddComment({review_id, setCommentsList}){
        
         const newComment = {username: userName, body: body}
 
-        PostComment(review_id, newComment).then((newCommentAPI) => {
+        postComment(review_id, newComment).then((newCommentAPI) => {
             setCommentsList((currComments) => {
             return [newCommentAPI, ...currComments];
             });

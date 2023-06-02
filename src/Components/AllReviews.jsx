@@ -1,24 +1,30 @@
-import {useState, useEffect} from "react"
-import { GetReviews } from "../Api";
+import { useSearchParams } from "react-router-dom";
 import ReviewCard from "./ReviewCard";
+import {useState, useEffect} from "react"
+import { getReviews } from "../Api";
 
-function ReviewsList (){
-    
+function AllReviews (){
+
+    const [searchParams, setSearchParams] = useSearchParams();
+    const Category = searchParams.get('category')
+
     const [reviewsList, setReviewsList] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
+
     useEffect(() => {
-        GetReviews().then(({reviews}) => {
+        getReviews(Category).then(({reviews}) => {
             setReviewsList(reviews);
             setIsLoading(false);
         })
-    }, []);
+    }, [Category]);
     
     if (isLoading) return <p className="Loading"> Loading... </p>
     
     return (<>
     
-    <h2 className="ReviewsListTitle">All Board Game Reviews</h2>
+    {!Category ? <h2 id="ReviewsListTitle">All Board Game Reviews</h2> : <h2 id="ReviewsListTitle">{Category} Board Game Reviews</h2>}
+
     <ul className ="ReviewsList">
     
     {reviewsList.map(({review_id, title, owner, review_img_url, created_at, votes, designer, category, comment_count}) => {
@@ -41,4 +47,8 @@ function ReviewsList (){
     </>)
 }
 
-export default ReviewsList
+
+
+
+    
+export default AllReviews
