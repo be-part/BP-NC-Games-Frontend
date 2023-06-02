@@ -104,7 +104,7 @@
   margin-block: 0;
 }
 
-.ReviewsListTitle {
+#ReviewsListTitle {
   padding: 10px;
   text-align: center;
   color:rgb(0, 29, 61);
@@ -254,6 +254,45 @@ padding: 10px;
 
 #CurrentUser {
 color:rgb(154, 3, 30);
+}
+
+/* Categories List */
+#CategoriesListTitle {
+  text-align: center;
+  color: rgb(0, 29, 61);
+  font-family: 'Cinzel', serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: xx-large;
+  margin-block: 0px;
+  padding: 10px;
+}
+
+#CategoriesListText {
+  padding: 15px;
+}
+
+#CategoriesListContainer {
+  border: 3px solid rgb(235, 216, 204);
+  padding: 15px;
+  width: 100%;
+  content: "";
+  clear: both;
+  display: table;
+  height: 84px;
+}
+
+#CategoriesList {
+  padding: 15px;
+  padding-inline: 0;
+  list-style: none;
+  width: 100%;
+  content: "";
+  clear: both;
+  margin-block: 0;
+}
+
+#CategoryListItem {
+  margin-bottom: 10px;
 }
 
 /* Buttons */
