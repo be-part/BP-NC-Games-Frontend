@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react"
-import { GetComments } from "../Api";
+import { getComments } from "../Api";
 import CommentCard from "./CommentCard";
 
 function CommentsList ({review_id, commentsList, setCommentsList}){
@@ -7,7 +7,7 @@ function CommentsList ({review_id, commentsList, setCommentsList}){
 const [isLoading, setIsLoading] = useState(true);
 
 useEffect(() => {
-    GetComments(review_id)
+    getComments(review_id)
     .then(({comments}) => {
     setCommentsList(comments);
     setIsLoading(false);

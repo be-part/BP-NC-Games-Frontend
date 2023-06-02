@@ -1,6 +1,5 @@
 import {useState, useEffect} from "react"
-import { GetCategories } from "../Api";
-import { useSearchParams} from 'react-router-dom';
+import { getCategories } from "../Api";
 import { Link } from "react-router-dom";
 
 function CategoriesList (){
@@ -10,7 +9,7 @@ function CategoriesList (){
 
 
     useEffect(() => {
-        GetCategories().then(({categories}) => {
+        getCategories().then(({categories}) => {
             setCategoriesList(categories);
             setIsLoading(false);
         })

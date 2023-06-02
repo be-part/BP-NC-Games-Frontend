@@ -1,11 +1,11 @@
-import { ChangeVotes } from "../Api";
+import { changeVotes } from "../Api";
 
 function SingleReviewCard ({singleReview, setSingleReview}) {
     
       const Upvote = () => {setSingleReview((currReview) => {
              return {...currReview, votes: currReview.votes+1}
        });
-       ChangeVotes(singleReview.review_id, 1).catch(() => {
+       changeVotes(singleReview.review_id, 1).catch(() => {
               setSingleReview((currReview) => {
                      return {...currReview, votes: currReview.votes-1}
               })
@@ -15,7 +15,7 @@ function SingleReviewCard ({singleReview, setSingleReview}) {
        const Downvote = () => {setSingleReview((currReview) => {
               return {...currReview, votes: currReview.votes-1}
         });
-        ChangeVotes(singleReview.review_id, -1).catch(() => {
+        changeVotes(singleReview.review_id, -1).catch(() => {
               setSingleReview((currReview) => {
                      return {...currReview, votes: currReview.votes+1}
               })

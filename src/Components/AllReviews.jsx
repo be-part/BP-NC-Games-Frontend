@@ -1,7 +1,7 @@
 import { useSearchParams } from "react-router-dom";
 import ReviewCard from "./ReviewCard";
 import {useState, useEffect} from "react"
-import { GetReviews } from "../Api";
+import { getReviews } from "../Api";
 
 function AllReviews (){
 
@@ -13,7 +13,7 @@ function AllReviews (){
 
 
     useEffect(() => {
-        GetReviews(Category).then(({reviews}) => {
+        getReviews(Category).then(({reviews}) => {
             setReviewsList(reviews);
             setIsLoading(false);
         })
