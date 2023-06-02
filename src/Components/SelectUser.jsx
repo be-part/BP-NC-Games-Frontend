@@ -15,18 +15,29 @@ function SelectUser () {
     <p>If you would like to to change who you are logged in as, select one of the options below:</p>
 
     <br/>
+    <div className="UserCard">
+    <button className="SU-btn" id="user1" onClick={() => setUser('tickle122')}> tickle122 </button>
+    </div>
 
-    <button id="SU-btn" onClick={() => setUser('tickle122')}> tickle122 </button>
-    
-    <button id="SU-btn" onClick={() => setUser('grumpy19')}> grumpy19 </button>
+    <div className="UserCard">
+    <button className="SU-btn" id="user2" onClick={() => setUser('grumpy19')}> grumpy19 </button>
+    </div>
 
-    <button id="SU-btn" onClick={() => setUser('happyamy2016')}> happyamy2016 </button>
+    <div className="UserCard">
+    <button className="SU-btn" id="user3" onClick={() => setUser('happyamy2016')}> happyamy2016 </button>
+    </div>
 
-    <button id="SU-btn" onClick={() => setUser('cooljmessy')}> cooljmessy </button>
+    <div className="UserCard">
+    <button className="SU-btn" id="user4" onClick={() => setUser('cooljmessy')}> cooljmessy </button>
+    </div>
 
-    <button id="SU-btn" onClick={() => setUser('weegembump')}> weegembump </button>
+    <div className="UserCard">
+    <button className="SU-btn" id="user5" onClick={() => setUser('weegembump')}> weegembump </button>
+    </div>
 
-    <button id="SU-btn" onClick={() => setUser('jessjelly')}> jessjelly </button>
+    <div className="UserCard">
+    <button className="SU-btn" id="user6" onClick={() => setUser('jessjelly')}> jessjelly </button>
+    </div>
     </main>
     </>)
 }

@@ -6,10 +6,10 @@
 /* Header CSS */
 .Header {
   width:100%; 
-  background-color:rgb(154, 3, 30);
+  background-color:rgb(199,0,0);
   color: #ffffff;
-  font-family: 'Cinzel', serif, Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 800;
+  font-family:'Josefin Sans','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
 }
 
 .HeaderContent {
@@ -21,7 +21,7 @@
 /* Header User */
 #Header-User {
   width:100%; 
-  background-color:rgb(93, 136, 216);
+  background-color:rgb(215,186,170);
   color: #ffffff;
   font-weight: 500;
 }
@@ -30,11 +30,13 @@
   margin: 0 auto; 
   width: 96%;
   text-align: left;
+  padding: 3px;
 }
 
 #Logged-In-As{
-  font-family: 'Cinzel', serif, Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 500;
+  font-family:'Josefin Sans','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 400;
+  
 }
 
 /* Navigation Bar CSS */
@@ -43,7 +45,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(251, 139, 36);
+  background-color: rgb(191,219,174);
 }
 
 .NavOption {
@@ -53,15 +55,15 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: 'Cinzel', serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-family:'Josefin Sans','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 500;
 }
 
 .NavOption:hover {
-  background-color: rgb(227, 100, 20);
+  background-color: rgb(143,188,114);
   color: rgb(31, 32, 31);
-  font-family: 'Cinzel', serif, Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 600;
+  font-family:'Josefin Sans','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
 }
 
 .NavOption {
@@ -74,7 +76,8 @@
 
 /* Home CSS */
 .Home {
-  border: 3px solid rgb(0, 29, 61);
+  border: 3px solid rgb(0, 0, 0);
+  background-color: rgb(214,233,213);
   padding: 15px;
   width: 100%;
   content: "";
@@ -93,7 +96,7 @@
 
 /* ReviewsList CSS */
 .ReviewsList {
-  border: 3px solid rgb(0, 29, 61);
+  border: 3px solid rgb(0, 0, 0);
   padding: 15px;
   padding-inline: 0;
   list-style: none;
@@ -107,16 +110,16 @@
 .ReviewsListTitle {
   padding: 10px;
   text-align: center;
-  color:rgb(0, 29, 61);
-  font-family: 'Cinzel', serif, Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 600;
+  color:rgb(0, 0, 0);
+  font-family:'Josefin Sans','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 500;
   font-size:xx-large;
   margin: 0px;
 }
 
 /* ReviewCard CSS */
 .ReviewListItem {
-  background-color: rgb(245, 242, 215);
+  background-color: rgb(214,233,213);
   padding: 10px;
   margin-bottom: 8px;
   width: 100%;
@@ -150,8 +153,8 @@
 #SingleReviewTitle {
   text-align: center;
   color: rgb(0, 29, 61);
-  font-family: 'Cinzel', serif, Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 600;
+  font-family:'Josefin Sans','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 500;
   font-size: xx-large;
   margin-block: 0px;
   padding: 10px;
@@ -235,16 +238,17 @@ padding: 10px;
 /* Select User */
 #SU-Title {
   text-align: center;
-  color: rgb(0, 29, 61);
-  font-family: 'Cinzel', serif, Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 600;
+  color: rgb(0, 0, 0);
+  font-family:'Josefin Sans','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 500;
   font-size: xx-large;
   margin-block: 0px;
   padding: 10px;
 }
 
 #SU-Container {
-  border: 3px solid rgb(235, 216, 204);
+  border: 3px solid rgb(0, 0, 0);
+  background-color: rgb(214,233,213);
   padding: 15px;
   width: 100%;
   content: "";
@@ -307,16 +311,41 @@ button:focus-visible {
   color:aliceblue;
 }
 
-#SU-btn {
+.SU-btn {
   background-color:  rgba(251, 140, 36, 0.89);
   padding: 6px;
-  margin-left: 10px;
+  border-radius: 0px;
 }
-#SU-btn:hover {
+.SU-btn:hover {
   border-color: #ffffff;
   filter: drop-shadow(0 0 0.5em #252727a8);
   background-color: rgb(227, 100, 20);
-  color:aliceblue
+  color:aliceblue;
+  border-radius: 0px;
+}
+
+#user1{
+  background-color: rgb(134,78,31);
+}
+
+#user2{
+  background-color: rgb(151,209,244);
+}
+
+#user3{
+  background-color: rgb(212,35,133);
+}
+
+#user4{
+  background-color: rgb(236,156,17);
+}
+
+#user5{
+  background-color:rgb(223,8,41);
+}
+
+#user6{
+  background-color: rgb(42,171,91);
 }
 
 /* Miscellaneous */
@@ -342,7 +371,7 @@ button:focus-visible {
 
 /* Links */
 .links {
-color:rgb(227, 100, 20);
+color: rgb(60,91,153);
 text-decoration: none;
 }
 
