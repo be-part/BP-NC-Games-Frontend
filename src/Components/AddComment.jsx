@@ -26,6 +26,7 @@ function AddComment({review_id, setCommentsList}){
         setBody("")
     };
     
+    const isDisabled = user === "new user"
 
     return (
     <>
@@ -40,7 +41,6 @@ function AddComment({review_id, setCommentsList}){
             value={userName}
 	        required
             readOnly
-            //onChange={(event) => setUserName(event.target.value)}
         />
         <div id="TextAreaLabelContainer">
         <label htmlFor="body">Comment: <span className="space2" ></span></label>
@@ -48,11 +48,12 @@ function AddComment({review_id, setCommentsList}){
             id="body" 
             value={body}
 	        required
-            cols="40"
+            cols="30"
             rows="4"
             onChange={(event) => setBody(event.target.value)}> </textarea>
         </div>
-        <button id="submit-btn">Submit Comment 💬</button>
+        <button id="submit-btn" disabled={isDisabled}>Submit Comment 💬</button>
+        {isDisabled ? <p id="SelectUserWarning"> You need to select an existing user to leave a comment! </p> : <p></p>}
         </form>
         
     </main>

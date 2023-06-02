@@ -23,7 +23,7 @@ function AllReviews (){
     
     return (<>
     
-    {!Category ? <h2 id="ReviewsListTitle">All Board Game Reviews</h2> : <h2 id="ReviewsListTitle">{Category} Board Game Reviews</h2>}
+    {!Category ? <h2 id="ReviewsListTitle">All Board Game Reviews</h2> : <h2 id="ReviewsListTitle"> All <span id="CategoryTypeTitle">{Category}</span> Board Game Reviews</h2>}
 
     <ul className ="ReviewsList">
     

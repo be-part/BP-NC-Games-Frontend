@@ -107,7 +107,7 @@
   margin-block: 0;
 }
 
-.ReviewsListTitle {
+#ReviewsListTitle {
   padding: 10px;
   text-align: center;
   color:rgb(0, 0, 0);
@@ -115,6 +115,10 @@
   font-weight: 500;
   font-size:xx-large;
   margin: 0px;
+}
+
+#CategoryTypeTitle {
+  color: rgb(199,0,0);
 }
 
 /* ReviewCard CSS */
@@ -235,6 +239,11 @@ padding: 10px;
   margin-bottom: 10px;
 }
 
+#SelectUserWarning {
+  color: red;
+  font-weight: 600;
+  }
+
 /* Select User */
 #SU-Title {
   text-align: center;
@@ -248,7 +257,7 @@ padding: 10px;
 
 #SU-Container {
   border: 3px solid rgb(0, 0, 0);
-  background-color: rgb(214,233,213);
+  background-color: rgb(191,219,174);
   padding: 15px;
   width: 100%;
   content: "";
@@ -271,11 +280,15 @@ color:rgb(154, 3, 30);
 }
 
 .UserCard {
+  border: 3px solid rgb(0, 0, 0);
   flex: none;
   width: auto;
   height: 80px;
   padding: 0;
   margin: 0;
+  background-color: rgb(214,233,213);
+  margin-left: 3px;
+  margin-bottom: 3px;
 }
 
 #user1{
@@ -300,6 +313,10 @@ color:rgb(154, 3, 30);
 
 #user6{
   background-color: rgb(42,171,91);
+}
+
+#noUser {
+  background-color: rgb(230,226,68);
 }
 
 /* Buttons */
@@ -358,12 +375,14 @@ button:focus-visible {
   background-color:rgba(134, 169, 199, 0.1);
   padding: 6px;
   border-radius: 0px;
+  margin: 0;
 }
 
 .SU-btn:hover {
   border-color: #ffffff;
   filter: drop-shadow(0 0 0.5em #252727a8);
   border-radius: 0px;
+  margin: 0px;
 }
 
 /* Miscellaneous */

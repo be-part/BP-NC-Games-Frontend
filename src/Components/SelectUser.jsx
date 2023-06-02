@@ -16,29 +16,34 @@ function SelectUser () {
 
     <br/>
     <div id="UserButtonContainer">
-    <div className="UserCard" id="user1">
-    <button className="SU-btn"  onClick={() => setUser('tickle122')}> tickle122 </button>
+    <div className="UserCard" >
+    <button className="SU-btn"  id="user1" onClick={() => setUser('tickle122')}> tickle122 </button>
     </div>
 
-    <div className="UserCard" id="user2">
-    <button className="SU-btn"  onClick={() => setUser('grumpy19')}> grumpy19 </button>
+    <div className="UserCard" >
+    <button className="SU-btn" id="user2" onClick={() => setUser('grumpy19')}> grumpy19 </button>
     </div>
 
-    <div className="UserCard" id="user3">
-    <button className="SU-btn"  onClick={() => setUser('happyamy2016')}> happyamy2016 </button>
+    <div className="UserCard" >
+    <button className="SU-btn" id="user3" onClick={() => setUser('happyamy2016')}> happyamy2016 </button>
     </div>
 
-    <div className="UserCard" id="user4">
-    <button className="SU-btn"  onClick={() => setUser('cooljmessy')}> cooljmessy </button>
+    <div className="UserCard" >
+    <button className="SU-btn" id="user4" onClick={() => setUser('cooljmessy')}> cooljmessy </button>
     </div>
 
-    <div className="UserCard" id="user5">
-    <button className="SU-btn"  onClick={() => setUser('weegembump')}> weegembump </button>
+    <div className="UserCard" >
+    <button className="SU-btn" id="user5" onClick={() => setUser('weegembump')}> weegembump </button>
     </div>
 
-    <div className="UserCard" id="user6">
-    <button className="SU-btn"  onClick={() => setUser('jessjelly')}> jessjelly </button>
+    <div className="UserCard" >
+    <button className="SU-btn" id="user6" onClick={() => setUser('jessjelly')}> jessjelly </button>
     </div>
+
+    <div className="UserCard" >
+    <button className="SU-btn" id="noUser" onClick={() => setUser('new user')}> Log Out </button>
+    </div>
+
     </div>
     </main>
     </>)

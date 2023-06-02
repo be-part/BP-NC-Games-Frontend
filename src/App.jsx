@@ -15,7 +15,7 @@ import AllReviews from './Components/AllReviews';
 
 function App() {
 
-  const [user, setUser] = useState('grumpy19')
+  const [user, setUser] = useState('new user')
 
   return (
     <>
