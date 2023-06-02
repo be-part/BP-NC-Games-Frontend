@@ -256,8 +256,50 @@ padding: 10px;
   display: table;
 }
 
+#UserButtonContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 15px;
+  width: 100%;
+  content: "";
+  clear: both;
+}
+
 #CurrentUser {
 color:rgb(154, 3, 30);
+}
+
+.UserCard {
+  flex: none;
+  width: auto;
+  height: 80px;
+  padding: 0;
+  margin: 0;
+}
+
+#user1{
+  background-color: rgb(134,78,31);
+}
+
+#user2{
+  background-color: rgb(151,209,244);
+}
+
+#user3{
+  background-color: rgb(212,35,133);
+}
+
+#user4{
+  background-color: rgb(236,156,17);
+}
+
+#user5{
+  background-color:rgb(223,8,41);
+}
+
+#user6{
+  background-color: rgb(42,171,91);
 }
 
 /* Buttons */
@@ -312,40 +354,16 @@ button:focus-visible {
 }
 
 .SU-btn {
-  background-color:  rgba(251, 140, 36, 0.89);
+  color:black;
+  background-color:rgba(134, 169, 199, 0.1);
   padding: 6px;
   border-radius: 0px;
 }
+
 .SU-btn:hover {
   border-color: #ffffff;
   filter: drop-shadow(0 0 0.5em #252727a8);
-  background-color: rgb(227, 100, 20);
-  color:aliceblue;
   border-radius: 0px;
-}
-
-#user1{
-  background-color: rgb(134,78,31);
-}
-
-#user2{
-  background-color: rgb(151,209,244);
-}
-
-#user3{
-  background-color: rgb(212,35,133);
-}
-
-#user4{
-  background-color: rgb(236,156,17);
-}
-
-#user5{
-  background-color:rgb(223,8,41);
-}
-
-#user6{
-  background-color: rgb(42,171,91);
 }
 
 /* Miscellaneous */
