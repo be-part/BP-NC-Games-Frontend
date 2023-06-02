@@ -1,53 +1,54 @@
-
 * {
   box-sizing: border-box;
-  }
-  
-  /* Header CSS */
-  .Header {
+}
+
+
+/* Header CSS */
+.Header {
   width:100%; 
   background-color:rgb(199,0,0);
   color: #ffffff;
   font-family:'Josefin Sans','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 700;
-  }
-  
-  .HeaderContent {
+}
+
+.HeaderContent {
   margin: 0 auto; 
   width: 96%;
   text-align: left;
-  }
-  
-  /* Header User */
-  #Header-User {
+}
+
+/* Header User */
+#Header-User {
   width:100%; 
   background-color:rgb(215,186,170);
   color: #ffffff;
   font-weight: 500;
-  }
-  
-  #Header-User-Content {
+}
+
+#Header-User-Content {
   margin: 0 auto; 
   width: 96%;
   text-align: left;
   padding: 3px;
-  }
-  
-  #Logged-In-As{
+}
+
+#Logged-In-As{
   font-family:'Josefin Sans','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 400;
-  }
   
-  /* Navigation Bar CSS */
-  .Nav {
+}
+
+/* Navigation Bar CSS */
+.Nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: rgb(191,219,174);
-  }
-  
-  .NavOption {
+}
+
+.NavOption {
   float: left;
   display: block;
   color: rgb(0, 0, 0);
@@ -56,25 +57,25 @@
   text-decoration: none;
   font-family:'Josefin Sans','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 500;
-  }
-  
-  .NavOption:hover {
+}
+
+.NavOption:hover {
   background-color: rgb(143,188,114);
   color: rgb(31, 32, 31);
   font-family:'Josefin Sans','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 700;
-  }
-  
-  .NavOption {
+}
+
+.NavOption {
   border-right: 2px solid #ffffff;
-  }
-  
-  .NavOption:last-child {
+}
+
+.NavOption:last-child {
   border-right: none;
-  }
-  
-  /* Home CSS */
-  .Home {
+}
+
+/* Home CSS */
+.Home {
   border: 3px solid rgb(0, 0, 0);
   background-color: rgb(214,233,213);
   padding: 15px;
@@ -82,19 +83,19 @@
   content: "";
   clear: both;
   display: table;
-  }
-  
-  .HomeContent {
+}
+
+.HomeContent {
   padding: 15px;
   width: 100%;
   content: "";
   clear: both;
   display: table;
   float:left
-  }
-  
-  /* ReviewsList CSS */
-  .ReviewsList {
+}
+
+/* ReviewsList CSS */
+.ReviewsList {
   border: 3px solid rgb(0, 0, 0);
   padding: 15px;
   padding-inline: 0;
@@ -104,9 +105,9 @@
   clear: both;
   display: table;
   margin-block: 0;
-  }
-  
-  .ReviewsListTitle {
+}
+
+.ReviewsListTitle {
   padding: 10px;
   text-align: center;
   color:rgb(0, 0, 0);
@@ -114,10 +115,10 @@
   font-weight: 500;
   font-size:xx-large;
   margin: 0px;
-  }
-  
-  /* ReviewCard CSS */
-  .ReviewListItem {
+}
+
+/* ReviewCard CSS */
+.ReviewListItem {
   background-color: rgb(214,233,213);
   padding: 10px;
   margin-bottom: 8px;
@@ -125,31 +126,31 @@
   content: "";
   clear: both;
   display: table;
-  }
-  
-  #RCTitle {
+}
+
+#RCTitle {
   color: rgb(0, 29, 61);
   text-align:center;
   font-size: 25px;
-  }
-  
-  #RCImage {
+}
+
+#RCImage {
   border-radius: 8px;
   width: 20%;
   height: 30%;
-  }
-  
-  /* Single Review CSS */
-  #SingleReviewContainer {
+}
+
+/* Single Review CSS */
+#SingleReviewContainer {
   border: 3px solid rgb(245, 242, 215);
   padding: 15px;
   width: 100%;
   content: "";
   clear: both;
   display: table;
-  }
-  
-  #SingleReviewTitle {
+}
+
+#SingleReviewTitle {
   text-align: center;
   color: rgb(0, 29, 61);
   font-family:'Josefin Sans','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -157,85 +158,85 @@
   font-size: xx-large;
   margin-block: 0px;
   padding: 10px;
-  }
-  
-  #SingleReviewInfo {
+}
+
+#SingleReviewInfo {
   background-color: rgb(245, 242, 215);
   margin: 0;
   padding: 10px;
-  }
-  
-  #SRImage {
+}
+
+#SRImage {
   margin: 1rem;
   border-radius: 8px;
   width: 40%;
   height: 40%;
-  }
-  
-  /* Comments CSS */
-  #CommentsContainer {
+}
+
+/* Comments CSS */
+#CommentsContainer {
   border: 3px solid rgb(235, 216, 204);
   padding: 15px;
   width: 100%;
   content: "";
   clear: both;
   display: table;
-  }
-  
-  #CommentList {
-  list-style: none;
-  margin: 0;
-  padding-inline-start: 0;
-  }
-  
-  #CommentListItem {
-  background-color: rgb(235, 216, 204);
-  margin: 0px;
-  padding: 10px;
-  }
-  
-  #CCUser {
+}
+
+#CommentList {
+list-style: none;
+margin: 0;
+padding-inline-start: 0;
+}
+
+#CommentListItem {
+background-color: rgb(235, 216, 204);
+margin: 0px;
+padding: 10px;
+}
+
+#CCUser {
+font-size: small;
+color: rgb(124, 83, 58);
+}
+
+#CCCreatedAt {
   font-size: small;
   color: rgb(124, 83, 58);
-  }
-  
-  #CCCreatedAt {
+}
+
+#CCVotes {
   font-size: small;
   color: rgb(124, 83, 58);
-  }
-  
-  #CCVotes {
-  font-size: small;
-  color: rgb(124, 83, 58);
-  }
-  
-  /* Post a comment CSS */
-  
-  #PostCommentContainer {
+}
+
+/* Post a comment CSS */
+
+#PostCommentContainer {
   margin-bottom: 15px;
-  }
-  
-  #PostCommentForm {
-  background-color: rgb(239, 241, 243);
-  padding: 10px;
-  }
-  
-  #PostCommentTitle {
+}
+
+#PostCommentForm {
+background-color: rgb(239, 241, 243);
+padding: 10px;
+}
+
+#PostCommentTitle {
   font-size: large;
   font-weight: 100;
   margin: 0;
   border: 0;
   margin-bottom: 10px;
-  }
-  
-  #TextAreaLabelContainer {
+}
+
+#TextAreaLabelContainer {
   display: flex;
   align-items:flex-start;
   margin-bottom: 10px;
-  }
-  
-  /* Select User */
-  #SU-Title {
+}
+
+/* Select User */
+#SU-Title {
   text-align: center;
   color: rgb(0, 0, 0);
   font-family:'Josefin Sans','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -243,9 +244,9 @@
   font-size: xx-large;
   margin-block: 0px;
   padding: 10px;
-  }
-  
-  #SU-Container {
+}
+
+#SU-Container {
   border: 3px solid rgb(0, 0, 0);
   background-color: rgb(214,233,213);
   padding: 15px;
@@ -253,9 +254,9 @@
   content: "";
   clear: both;
   display: table;
-  }
-  
-  #UserButtonContainer {
+}
+
+#UserButtonContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -263,47 +264,47 @@
   width: 100%;
   content: "";
   clear: both;
-  }
-  
-  #CurrentUser {
-  color:rgb(154, 3, 30);
-  }
-  
-  .UserCard {
+}
+
+#CurrentUser {
+color:rgb(154, 3, 30);
+}
+
+.UserCard {
   flex: none;
   width: auto;
   height: 80px;
   padding: 0;
   margin: 0;
-  }
-  
-  #user1{
+}
+
+#user1{
   background-color: rgb(134,78,31);
-  }
-  
-  #user2{
+}
+
+#user2{
   background-color: rgb(151,209,244);
-  }
-  
-  #user3{
+}
+
+#user3{
   background-color: rgb(212,35,133);
-  }
-  
-  #user4{
+}
+
+#user4{
   background-color: rgb(236,156,17);
-  }
-  
-  #user5{
+}
+
+#user5{
   background-color:rgb(223,8,41);
-  }
-  
-  #user6{
+}
+
+#user6{
   background-color: rgb(42,171,91);
-  }
-  
-  /* Buttons */
-  
-  button {
+}
+
+/* Buttons */
+
+button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 5px;
@@ -313,86 +314,85 @@
   font-family: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
-  }
-  
-  button:focus,
-  button:focus-visible {
+}
+
+button:focus,
+button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-  }
-  
-  #upvote-btn {
-  background-color: rgba(251, 140, 36, 0.89);
-  }
-  #upvote-btn:hover {
+}
+
+#upvote-btn {
+  background-color:  rgba(251, 140, 36, 0.89);
+}
+#upvote-btn:hover {
   border-color: #ffffff;
   filter: drop-shadow(0 0 0.5em #252727a8);
   background-color: rgb(227, 100, 20);
   color:aliceblue
-  }
-  
-  #downvote-btn {
+}
+
+#downvote-btn {
   background-color: rgba(154, 3, 31, 0.829);
-  }
-  #downvote-btn:hover {
+}
+#downvote-btn:hover {
   border-color: #ffffff;
   filter: drop-shadow(0 0 0.5em #252727a8);
   background-color: rgb(154, 3, 30);
   color:aliceblue;
-  }
-  
-  #submit-btn {
+}
+
+#submit-btn {
   background-color: rgb(3, 70, 143);
   padding: 6px;
   margin-left: 10px;
-  }
-  #submit-btn:hover {
+}
+#submit-btn:hover {
   border-color: #ffffff;
   filter: drop-shadow(0 0 0.5em #252727a8);
   background-color: rgb(0, 29, 61);
   color:aliceblue;
-  }
-  
-  .SU-btn {
+}
+
+.SU-btn {
   color:black;
   background-color:rgba(134, 169, 199, 0.1);
   padding: 6px;
   border-radius: 0px;
-  }
-  
-  .SU-btn:hover {
+}
+
+.SU-btn:hover {
   border-color: #ffffff;
   filter: drop-shadow(0 0 0.5em #252727a8);
   border-radius: 0px;
-  }
-  
-  /* Miscellaneous */
-  
-  /* Loading CSS */
-  .Loading {
+}
+
+/* Miscellaneous */
+
+/* Loading CSS */
+.Loading {
   text-align: center;
-  }
-  
-  /* Bold */ 
-  .bold{
+}
+
+/* Bold */ 
+.bold{
   font-weight: bold;
-  }
-  
-  /* Space */
-  .space {
+}
+
+/* Space */
+.space {
   margin: 10px;
-  }
-  
-  .space2 {
+}
+
+.space2 {
   margin: 4px;
-  }
-  
-  /* Links */
-  .links {
-  color: rgb(60,91,153);
-  text-decoration: none;
-  }
-  
-  .links:hover {
-  color: rgb(154, 3, 30);
-  }
-  
+}
+
+/* Links */
+.links {
+color: rgb(60,91,153);
+text-decoration: none;
+}
+
+.links:hover {
+color: rgb(154, 3, 30);
+}
