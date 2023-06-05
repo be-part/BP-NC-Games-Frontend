@@ -4,7 +4,7 @@ function Nav() {
   return (
     <nav className="Nav">
       <Link to="/" id="NavHome" className="NavOption">Home</Link>
-      <Link to="/reviews" id="NavAllReviews" className="NavOption">All Reviews</Link>
+      <Link to="/reviews" id="NavAllReviews" className="NavOption" state={{ value: null }}>All Reviews</Link>
       <Link to="/categories" id="NavReviewCategories" className="NavOption">Review Categories</Link>
       <Link to="/signin" id="NavSelectUser" className="NavOption">Select User</Link>
     </nav>
