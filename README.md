@@ -57,7 +57,6 @@ Type `npm install` to install the required dependencies for this repo, including
 
 ## Further Information
 
-This project was created during participation in Northcoders Bootcamp. Using their framework, I built a backend project over the course of several days and weeks to improve my Javascript, Express, Jest and SuperJests skills - as well as to later incorporate it in a front-end project. 
-
+This project was created during participation in Northcoders Bootcamp. Using their framework, I built a frontend project over the course of several days and weeks to improve my React, HTML and CSS skills.
 
 [Back to top](#bp-house-of-games-api)
