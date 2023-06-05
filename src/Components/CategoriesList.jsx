@@ -8,6 +8,7 @@ function CategoriesList (){
     const [isLoading, setIsLoading] = useState(true);
 
 
+
     useEffect(() => {
         getCategories().then(({categories}) => {
             setCategoriesList(categories);
