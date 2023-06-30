@@ -10,32 +10,21 @@ function AddComment({review_id, setCommentsList}){
     const [userName, setUserName] = useState(user);
     const [body, setBody] = useState("");
 
-    const profanityFilter = require('bad-words');
-    const filter = new Filter();
-
     const handleSubmit = (event) => {
         event.preventDefault();
        
         const newComment = {username: userName, body: body}
 
-        const filteredCommentBody = filter.isProfane(newComment.body) === true ? '' : newComment.body;
+        postComment(review_id, newComment).then((newCommentAPI) => {
+            setCommentsList((currComments) => {
+            return [newCommentAPI, ...currComments];
+            });
 
-        if (filteredCommentBody === '') {
-                // Show a warning message to the user
-            } else {
-                postComment(review_id, newComment).then((newCommentAPI) => {
-                    setCommentsList((currComments) => {
-                    return [newCommentAPI, ...currComments];
-                    });
-        
-                });
-        
-                setUserName("")
-                setBody("")
-            };
-        }
+        });
 
-       
+        setUserName("")
+        setBody("")
+    };
     
     const isDisabled = user === "new user"
 
