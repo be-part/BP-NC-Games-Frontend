@@ -18,7 +18,7 @@ Front-end Project
 
 This project was built to develop my front-end skills; including using React, HTML, CSS and to consider the UX.  
 
-Reviews contain information about various board games (both the classics and the lesser-knowns) with useful information about them including who designed them, a description of the game and sometimes a 'helpful' image. You can sort through the reviews with various options provided to the user. 
+Reviews contain information about various board games (both the classics and the lesser-knowns) with useful information about them including who designed them, a description of the game and an image. You can sort through the reviews with various options provided to the user. 
 Users may comment on reviews and either upvote or downvote them allowing for engagement and spirited debates on everything board game!
 
 This front end is built using my previous back-end project: 
