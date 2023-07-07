@@ -22,7 +22,7 @@ Reviews contain information about various board games (both the classics and the
 Users may comment on reviews and either upvote or downvote them allowing for engagement and spirited debates on everything board game!
 
 This front end is built using my previous back-end project: 
-https://github.com/be-part/BP-NC-Games 
+https://github.com/be-part/BP-NC-Games-Backend
 
 The hosted API for this back-end can be found here:
 https://nc-games-bp.onrender.com/api/ 
