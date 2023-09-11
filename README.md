@@ -1,4 +1,4 @@
-# BP House of Games :game_die:
+# House of Games :game_die:
 
 Front-end Project
 
